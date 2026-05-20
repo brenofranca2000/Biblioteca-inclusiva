@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "usuarios")
-public class usuario {
+public class Usuario {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,9 +17,10 @@ public class usuario {
 
     private String telefone;
 
+
     @OneToOne
     @JoinColumn(name = "perfil_id")
-    private perfilacessibilidade perfilAcessibilidade;
+    private PerfilAcessibilidade perfilAcessibilidade;
 
     public Long getid() {
         return id;
@@ -52,11 +54,11 @@ public class usuario {
         this.telefone = telefone;
     }
 
-    public perfilacessibilidade getPerfilAcessibilidade() {
+    public PerfilAcessibilidade getPerfilAcessibilidade() {
         return perfilAcessibilidade;
     }
 
-    public void setPerfilAcessibilidade(perfilacessibilidade perfilAcessibilidade) {
+    public void setPerfilAcessibilidade(PerfilAcessibilidade perfilAcessibilidade) {
         this.perfilAcessibilidade = perfilAcessibilidade;
     }
 }

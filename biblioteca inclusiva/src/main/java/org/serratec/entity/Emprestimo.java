@@ -1,4 +1,4 @@
 package org.serratec.entity;
 
-public class emprestimo {
+public class Emprestimo {
 }

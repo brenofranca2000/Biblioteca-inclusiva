@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "perfil_acessibilidade")
-public class perfilacessibilidade {
+public class PerfilAcessibilidade {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
