@@ -1,4 +1,4 @@
-package org.serratec.entity;
+package org.serratec.biblioteca_inclusiva.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

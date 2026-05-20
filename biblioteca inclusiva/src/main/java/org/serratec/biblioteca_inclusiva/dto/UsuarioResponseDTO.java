@@ -1,4 +1,4 @@
-package org.serratec.dto;
+package org.serratec.biblioteca_inclusiva.dto;
 
 public class UsuarioResponseDTO {
 

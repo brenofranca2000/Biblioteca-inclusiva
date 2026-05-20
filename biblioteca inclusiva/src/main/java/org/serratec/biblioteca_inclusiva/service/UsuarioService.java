@@ -1,9 +1,9 @@
-package org.serratec.service;
+package org.serratec.biblioteca_inclusiva.service;
 
-import org.serratec.dto.UsuarioRequestDTO;
-import org.serratec.dto.UsuarioResponseDTO;
-import org.serratec.entity.Usuario;
-import org.serratec.repository.UsuarioRepository;
+import org.serratec.biblioteca_inclusiva.dto.UsuarioRequestDTO;
+import org.serratec.biblioteca_inclusiva.dto.UsuarioResponseDTO;
+import org.serratec.biblioteca_inclusiva.entity.Usuario;
+import org.serratec.biblioteca_inclusiva.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

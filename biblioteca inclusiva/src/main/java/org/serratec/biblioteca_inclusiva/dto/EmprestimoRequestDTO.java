@@ -1,18 +1,12 @@
-package org.serratec.dto;
+package org.serratec.biblioteca_inclusiva.dto;
 
 import java.time.LocalDate;
 
-public class EmprestimoResponseDTO {
-
-    private Long id;
+public class EmprestimoRequestDTO {
 
     private LocalDate dataEmprestimo;
 
     private LocalDate dataDevolucao;
-
-    public Long getId() {
-        return id;
-    }
 
     public LocalDate getDataEmprestimo() {
         return dataEmprestimo;
@@ -20,10 +14,6 @@ public class EmprestimoResponseDTO {
 
     public LocalDate getDataDevolucao() {
         return dataDevolucao;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public void setDataEmprestimo(LocalDate dataEmprestimo) {

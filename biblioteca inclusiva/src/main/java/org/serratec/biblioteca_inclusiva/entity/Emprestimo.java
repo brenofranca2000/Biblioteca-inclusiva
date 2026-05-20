@@ -1,4 +1,4 @@
-package org.serratec.entity;
+package org.serratec.biblioteca_inclusiva.entity;
 
 import jakarta.persistence.*;
 

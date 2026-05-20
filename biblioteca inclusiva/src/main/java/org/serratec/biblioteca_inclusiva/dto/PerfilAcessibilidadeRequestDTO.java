@@ -1,18 +1,12 @@
-package org.serratec.dto;
+package org.serratec.biblioteca_inclusiva.dto;
 
-public class PerfilAcessibilidadeResponseDTO {
-
-    private Long id;
+public class PerfilAcessibilidadeRequestDTO {
 
     private String tipoDeficiencia;
 
     private Boolean necessitaAudiobook;
 
     private Boolean necessitaFonteAmpliada;
-
-    public Long getId() {
-        return id;
-    }
 
     public String getTipoDeficiencia() {
         return tipoDeficiencia;
@@ -24,10 +18,6 @@ public class PerfilAcessibilidadeResponseDTO {
 
     public Boolean getNecessitaFonteAmpliada() {
         return necessitaFonteAmpliada;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public void setTipoDeficiencia(String tipoDeficiencia) {
