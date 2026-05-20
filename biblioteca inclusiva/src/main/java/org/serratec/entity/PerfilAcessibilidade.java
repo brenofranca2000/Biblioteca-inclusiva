@@ -1,10 +1,6 @@
 package org.serratec.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "perfil_acessibilidade")
@@ -24,28 +20,28 @@ public class PerfilAcessibilidade {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getTipoDeficiencia() {
         return tipoDeficiencia;
-    }
-
-    public void setTipoDeficiencia(String tipoDeficiencia) {
-        this.tipoDeficiencia = tipoDeficiencia;
     }
 
     public Boolean getNecessitaAudiobook() {
         return necessitaAudiobook;
     }
 
-    public void setNecessitaAudiobook(Boolean necessitaAudiobook) {
-        this.necessitaAudiobook = necessitaAudiobook;
-    }
-
     public Boolean getNecessitaFonteAmpliada() {
         return necessitaFonteAmpliada;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTipoDeficiencia(String tipoDeficiencia) {
+        this.tipoDeficiencia = tipoDeficiencia;
+    }
+
+    public void setNecessitaAudiobook(Boolean necessitaAudiobook) {
+        this.necessitaAudiobook = necessitaAudiobook;
     }
 
     public void setNecessitaFonteAmpliada(Boolean necessitaFonteAmpliada) {

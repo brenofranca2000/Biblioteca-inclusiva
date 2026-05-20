@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 @Table(name = "usuarios")
 public class Usuario {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -17,12 +16,11 @@ public class Usuario {
 
     private String telefone;
 
-
     @OneToOne
     @JoinColumn(name = "perfil_id")
     private PerfilAcessibilidade perfilAcessibilidade;
 
-    public Long getid() {
+    public Long getId() {
         return id;
     }
 
