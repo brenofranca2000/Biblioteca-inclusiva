@@ -3,14 +3,11 @@ package org.serratec.biblioteca_inclusiva.dto;
 public class LivroResponseDTO {
 
     private Long id;
-
     private String titulo;
-
     private String autor;
-
     private String isbn;
-
     private Integer quantidade;
+    private String categoria;
 
     public Long getId() {
         return id;
@@ -32,6 +29,10 @@ public class LivroResponseDTO {
         return quantidade;
     }
 
+    public String getCategoria() {
+        return categoria;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -50,5 +51,9 @@ public class LivroResponseDTO {
 
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 }

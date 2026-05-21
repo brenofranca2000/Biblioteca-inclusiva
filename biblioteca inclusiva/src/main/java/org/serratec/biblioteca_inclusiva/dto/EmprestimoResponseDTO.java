@@ -10,6 +10,10 @@ public class EmprestimoResponseDTO {
 
     private LocalDate dataDevolucao;
 
+    private String usuario;
+
+    private String livro;
+
     public Long getId() {
         return id;
     }
@@ -32,5 +36,12 @@ public class EmprestimoResponseDTO {
 
     public void setDataDevolucao(LocalDate dataDevolucao) {
         this.dataDevolucao = dataDevolucao;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+    public void setLivro(String livro) {
+        this.livro = livro;
     }
 }

@@ -8,19 +8,39 @@ public class EmprestimoRequestDTO {
 
     private LocalDate dataDevolucao;
 
+    private Long usuarioId;
+
+    private Long livroId;
+
     public LocalDate getDataEmprestimo() {
         return dataEmprestimo;
-    }
-
-    public LocalDate getDataDevolucao() {
-        return dataDevolucao;
     }
 
     public void setDataEmprestimo(LocalDate dataEmprestimo) {
         this.dataEmprestimo = dataEmprestimo;
     }
 
+    public LocalDate getDataDevolucao() {
+        return dataDevolucao;
+    }
+
     public void setDataDevolucao(LocalDate dataDevolucao) {
         this.dataDevolucao = dataDevolucao;
+    }
+
+    public Long getUsuarioId() {
+        return usuarioId;
+    }
+
+    public void setUsuarioId(Long usuarioId) {
+        this.usuarioId = usuarioId;
+    }
+
+    public Long getLivroId() {
+        return livroId;
+    }
+
+    public void setLivroId(Long livroId) {
+        this.livroId = livroId;
     }
 }
