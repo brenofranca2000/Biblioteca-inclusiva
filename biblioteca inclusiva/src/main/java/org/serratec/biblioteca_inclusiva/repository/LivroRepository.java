@@ -1,4 +1,7 @@
 package org.serratec.biblioteca_inclusiva.repository;
 
-public interface LivroRepository {
+import org.serratec.biblioteca_inclusiva.entity.Livro;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LivroRepository extends JpaRepository<Livro, Long> {
 }

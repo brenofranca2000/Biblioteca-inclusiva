@@ -55,15 +55,21 @@ public class EmprestimoService {
 
         emprestimo = emprestimoRepository.save(emprestimo);
 
-        EmprestimoResponseDTO response = new EmprestimoResponseDTO();
+        return toResponseDTO(emprestimo);
+    }
 
-        response.setId(emprestimo.getId());
-        response.setDataEmprestimo(emprestimo.getDataEmprestimo());
-        response.setDataDevolucao(emprestimo.getDataDevolucao());
-        response.setUsuario(emprestimo.getUsuario().getNome());
-        response.setLivro(emprestimo.getLivro().getTitulo());
+    private EmprestimoResponseDTO toResponseDTO(Emprestimo emprestimo) {
 
-        return response;
+        EmprestimoResponseDTO dto = new EmprestimoResponseDTO();
+
+        dto.setId(emprestimo.getId());
+        dto.setDataEmprestimo(emprestimo.getDataEmprestimo());
+        dto.setDataDevolucao(emprestimo.getDataDevolucao());
+
+        dto.setUsuario(emprestimo.getUsuario().getNome());
+        dto.setLivro(emprestimo.getLivro().getTitulo());
+
+        return dto;
     }
 
     public List<EmprestimoResponseDTO> listar() {
@@ -72,15 +78,7 @@ public class EmprestimoService {
 
         return emprestimos.stream().map(emprestimo -> {
 
-            EmprestimoResponseDTO response = new EmprestimoResponseDTO();
-
-            response.setId(emprestimo.getId());
-            response.setDataEmprestimo(emprestimo.getDataEmprestimo());
-            response.setDataDevolucao(emprestimo.getDataDevolucao());
-            response.setUsuario(emprestimo.getUsuario().getNome());
-            response.setLivro(emprestimo.getLivro().getTitulo());
-
-            return response;
+            return toResponseDTO(emprestimo);
 
         }).collect(Collectors.toList());
     }

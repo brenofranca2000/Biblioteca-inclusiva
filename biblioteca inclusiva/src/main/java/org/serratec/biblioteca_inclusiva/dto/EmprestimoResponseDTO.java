@@ -26,6 +26,14 @@ public class EmprestimoResponseDTO {
         return dataDevolucao;
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public String getLivro() {
+        return livro;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -41,6 +49,7 @@ public class EmprestimoResponseDTO {
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
+
     public void setLivro(String livro) {
         this.livro = livro;
     }
